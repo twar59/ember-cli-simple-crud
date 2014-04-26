@@ -1,16 +1,21 @@
-<h4>Add a New Book</h4>
+{{#form-key-capture submit="submit" cancel="cancel"}}
 
-  <div>
-    {{input type="text" placeholder="title" valueBinding="title"}}
-  </div>
+  <h4>Add a New Book</h4>
 
-  <div>
-    {{input type="text" placeholder="author" valueBinding="author"}}
-  </div>
+    <div>
+      {{input type="text" placeholder="title" valueBinding="title"}}
+    </div>
 
-  <button {{action submit}} class="btn primary">
-    Submit
-  </button>
+    <div>
+      {{input type="text" placeholder="author" valueBinding="author"}}
+    </div>
 
-</hr>
-<p> {{#link-to 'books'}}return to list{{/link-to}} </p>
+    <button {{action submit}} class="btn primary">
+      Submit
+    </button>
+
+    <button {{action cancel}} class="btn primary">
+      Cancel
+    </button>
+
+{{/form-key-capture}}

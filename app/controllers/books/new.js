@@ -7,6 +7,9 @@ export default Ember.ObjectController.extend({
         }.bind(this), function(error) {
           console.log(error);
         });
+    },
+    cancel: function() {
+      this.transitionTo('books');
     }
   }
 });
