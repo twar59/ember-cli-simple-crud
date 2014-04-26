@@ -4,7 +4,7 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.resource("book", {path: '/'})
+  this.resource("books")
 });
 
 export default Router;
