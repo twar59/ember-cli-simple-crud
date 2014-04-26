@@ -1,0 +1,16 @@
+<h4>Add a New Book</h4>
+
+  <div>
+    {{input type="text" placeholder="title" valueBinding="title"}}
+  </div>
+
+  <div>
+    {{input type="text" placeholder="author" valueBinding="author"}}
+  </div>
+
+  <button {{action submit}} class="btn primary">
+    Submit
+  </button>
+
+</hr>
+<p> {{#link-to 'books'}}return to list{{/link-to}} </p>
