@@ -1,0 +1,21 @@
+{{#form-key-capture submit="submit" cancel="cancel"}}
+
+  <h4>Edit Book</h4>
+
+    <div>
+      {{input type="text" placeholder="title" valueBinding="title"}}
+    </div>
+
+    <div>
+      {{input type="text" placeholder="author" valueBinding="author"}}
+    </div>
+
+    <button {{action submit}} class="btn primary">
+      Submit
+    </button>
+
+    <button {{action cancel}} class="btn primary">
+      Cancel
+    </button>
+
+{{/form-key-capture}}

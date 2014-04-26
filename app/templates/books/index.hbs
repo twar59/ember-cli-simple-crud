@@ -3,6 +3,7 @@
 <p>{{book.title}} by {{book.author}}</p>
 <p>
 {{#link-to 'books.show' book}} Show {{/link-to}} | 
+{{#link-to 'books.edit' book}} Edit {{/link-to}} | 
 <button {{action 'delete' book}}>Delete</button>
 </p>
 </div>

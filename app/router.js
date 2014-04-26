@@ -5,9 +5,9 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.resource("books", function() {
-    this.route('show', {path: 'show/:book_id'})
     this.route('new', {path: 'new'})
-    this.route('delete', {path: 'delete/:book_id'})
+    this.route('show', {path: 'show/:book_id'})
+    this.route('edit', {path: 'edit/:book_id'})
   })
 });
 
