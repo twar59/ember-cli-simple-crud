@@ -5,10 +5,13 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.resource("books", function() {
-    this.route('new', {path: 'new'});
-    this.route('show', {path: 'show/:book_id'});
-    this.route('edit', {path: 'edit/:book_id'});
+    this.route('new');
+    this.route('edit', {path: '/:book_id/edit'});
+    this.route('show', {path: '/:book_id/show'});
   });
 });
+
+
+
 
 export default Router;
