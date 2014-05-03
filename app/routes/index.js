@@ -1,5 +1,5 @@
 export default Ember.Route.extend({
     beforeModel: function() {
-        this.transitionTo('books')
+        this.transitionTo('books');
     }
 });

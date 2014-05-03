@@ -9,11 +9,11 @@ export default Ember.Component.extend({
         this.$('input').on('keydown', function(e) {
             var charCode = (typeof e.which === "number") ? e.which : e.keyCode;
 
-            if (charCode == KEYCODE_ENTER) { console.log('submit'); this.sendAction('submit'); }
-            if (charCode == KEYCODE_ESC) { console.log('cancel'); this.sendAction('cancel'); }
+            if (charCode === KEYCODE_ENTER) { console.log('submit'); this.sendAction('submit'); }
+            if (charCode === KEYCODE_ESC) { console.log('cancel'); this.sendAction('cancel'); }
         }.bind(this));
 
         this.$('input')[0].focus();
     }
 
-})
+});
