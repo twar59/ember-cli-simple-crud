@@ -3,7 +3,7 @@ export default Ember.ObjectController.extend({
     submit: function() {
         this.get('content').save().then(function() {
           console.log("save successful");
-          this.transitionTo('books');
+          this.transitionToRoute('books');
         }.bind(this), function(error) {
           console.log(error);
         });

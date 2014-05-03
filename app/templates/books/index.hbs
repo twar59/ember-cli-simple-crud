@@ -2,11 +2,11 @@
 <div>
 <p>{{book.title}} by {{book.author}}</p>
 <p>
-{{#link-to 'books.show' book}} Show {{/link-to}} | 
-{{#link-to 'books.edit' book}} Edit {{/link-to}} | 
+{{link-to 'Show' 'books.show' book}} |
+{{link-to 'Edit' 'books.edit' book}} |
 <button {{action 'delete' book}}>Delete</button>
 </p>
 </div>
 {{/each}}
 
-<p> {{#link-to 'books.new'}}Add a Book{{/link-to}} </p>
+<p> {{link-to 'Add a Book' 'books.new'}} </p>
