@@ -1,4 +1,10 @@
 export default Ember.Route.extend({
+    controllerName: 'books.edit',
+
+    renderTemplate: function() {
+      this.render('books.form');
+    },
+
     model: function() {
         return this.store.createRecord('book');
     },
