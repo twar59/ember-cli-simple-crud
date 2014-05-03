@@ -2,9 +2,9 @@
 
 Ember Cli Version 0.0.25
 
-This project demonstrates a very simple crud, written using ember-cli.
+This project demonstrates a very simple, rails style, crud, written using ember-cli.
 
-VERY SIMPLE: no tests, no style, no backend (uses fixtures)
+VERY SIMPLE: no tests(other than default), basic bootstrap style, no backend (uses fixtures)
 
 ## Install and Run
 

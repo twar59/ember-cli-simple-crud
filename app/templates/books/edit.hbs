@@ -2,20 +2,18 @@
 
   <h4>Edit Book</h4>
 
-    <div>
-      {{input type="text" placeholder="title" valueBinding="title"}}
+    <div class="form-group">
+      <label>Title</label>
+      {{input type="text" placeholder="title" class="form-control" valueBinding="title"}}
     </div>
 
-    <div>
-      {{input type="text" placeholder="author" valueBinding="author"}}
+    <div class="form-group">
+      <label>Author</label>
+      {{input type="text" placeholder="author" class="form-control" valueBinding="author"}}
     </div>
 
-    <button {{action submit}} class="btn primary">
-      Submit
-    </button>
+    <button {{action submit}} class="btn btn-primary"> Submit </button>
 
-    <button {{action cancel}} class="btn primary">
-      Cancel
-    </button>
+    <button {{action cancel}} class="btn btn-primary"> Cancel </button>
 
 {{/form-key-capture}}

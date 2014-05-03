@@ -1,12 +1,15 @@
 {{#each book in model}}
-<div>
-<p>{{book.title}} by {{book.author}}</p>
-<p>
-{{link-to 'Show' 'books.show' book}} |
-{{link-to 'Edit' 'books.edit' book}} |
-<button {{action 'delete' book}}>Delete</button>
-</p>
+<div class="bg-info book-container">
+  <strong>{{book.title}}</strong> <br/> 
+  by {{book.author}}
+
+<div class="button-container">
+{{link-to 'Show' 'books.show' book class="btn btn-sm btn-primary"}} 
+{{link-to 'Edit' 'books.edit' book class="btn btn-sm btn-primary"}} 
+<button {{action 'delete' book}} class="btn btn-sm btn-danger">Delete</button>
+</div>
+
 </div>
 {{/each}}
 
-<p> {{link-to 'Add a Book' 'books.new'}} </p>
+<p> {{link-to 'Add a Book' 'books.new' class="btn btn-sm btn-success"}} </p>
