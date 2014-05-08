@@ -21,13 +21,6 @@ $ cd ember-cli-simple-crud
 $ npm install && bower install
 ```
 
-* **deal with 0.0.27 bug**
-
-```
-$ mkdir vendor/jquery/dist
-$ cp vendor/jquery/jquery.* vendor/jquery/dist/.
-```
-
 * run the app
 
 ```
