@@ -1,6 +1,6 @@
 ﻿# ember-cli simple crud example
 
-Ember Cli Version 0.0.25
+Ember Cli Version 0.0.27
 
 This project demonstrates a very simple, rails style, crud, written using ember-cli.
 
@@ -15,11 +15,17 @@ $ git clone https://github.com/twar59/ember-cli-simple-crud.git
 $ cd ember-cli-simple-crud
 ```
 
-
 * download dependencies
 
 ```
 $ npm install && bower install
+```
+
+* **deal with 0.0.27 bug**
+
+```
+$ mkdir vendor/jquery/dist
+$ cp vendor/jquery/jquery.* vendor/jquery/dist/.
 ```
 
 * run the app
@@ -27,3 +33,5 @@ $ npm install && bower install
 ```
 $ ember server
 ```
+
+

@@ -14,9 +14,11 @@
     <link rel="stylesheet" href="assets/bootstrap-theme.css">
   </head>
   <body>
-    <script src="assets/app.js"></script>
     <script>
       window.ENV = {{ENV}};
+    </script>
+    <script src="assets/app.js"></script>
+    <script>
       window.Books = require('books/app')['default'].create(ENV.APP);
     </script>
   </body>
