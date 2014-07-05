@@ -1,6 +1,7 @@
+import Ember from 'ember';
+
 var Router = Ember.Router.extend({
-  rootURL: ENV.rootURL,
-  location: 'auto'
+  location: BooksENV.locationType
 });
 
 Router.map(function() {

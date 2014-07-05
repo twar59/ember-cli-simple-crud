@@ -9,16 +9,18 @@
 
     {{BASE_TAG}}
 
-    <link rel="stylesheet" href="assets/app.css">
     <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/books.css">
   </head>
   <body>
     <script>
-      window.ENV = {{ENV}};
+      window.BooksENV = {{ENV}};
+      window.EmberENV = window.BooksENV.EmberENV;
     </script>
-    <script src="assets/app.js"></script>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/books.js"></script>
     <script>
-      window.Books = require('books/app')['default'].create(ENV.APP);
+      window.Books = require('books/app')['default'].create(BooksENV.APP);
     </script>
   </body>
 </html>

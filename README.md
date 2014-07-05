@@ -1,8 +1,8 @@
 ﻿# ember-cli simple crud example
 
-Ember Cli Version 0.0.27
+Ember Cli Version 0.0.39
 
-This project demonstrates a very simple, rails style, crud, written using ember-cli.
+This project demonstrates a very simple, rails style, crud, written using ember-cli.  The purpose of this app is to give me a quick easy reference app.
 
 VERY SIMPLE: no tests(other than default), basic bootstrap style, no backend (uses fixtures)
 

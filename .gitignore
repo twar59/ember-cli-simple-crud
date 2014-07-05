@@ -12,6 +12,7 @@
 # misc
 /.sass-cache
 /connect.lock
+/coverage/*
 /libpeerconnection.log
 .DS_Store
 Thumbs.db
