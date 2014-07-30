@@ -2,16 +2,9 @@
   "predef": {
     "document": true,
     "window": true,
-    "BooksENV": true,
-    "location": true,
-    "setTimeout": true,
     "Ember": true,
-    "Em": true,
     "DS": true,
-    "$": true,
-    "ENV": true,
-    "module": true,
-    "console": true
+    "BooksENV": true
   },
   "browser" : true,
   "boss" : true,
