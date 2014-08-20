@@ -4,12 +4,12 @@
   by {{book.author}}
 
 <div class="button-container">
-{{link-to 'Show' 'books.show' book class="btn btn-sm btn-primary"}} 
-{{link-to 'Edit' 'books.edit' book class="btn btn-sm btn-primary"}} 
+{{link-to 'Show' 'rcruds.show' book class="btn btn-sm btn-primary"}} 
+{{link-to 'Edit' 'rcruds.edit' book class="btn btn-sm btn-primary"}} 
 <button {{action 'delete' book}} class="btn btn-sm btn-danger">Delete</button>
 </div>
 
 </div>
 {{/each}}
 
-<p> {{link-to 'Add a Book' 'books.new' class="btn btn-sm btn-success"}} </p>
+<p> {{link-to 'Add a Book' 'rcruds.new' class="btn btn-sm btn-success"}} </p>

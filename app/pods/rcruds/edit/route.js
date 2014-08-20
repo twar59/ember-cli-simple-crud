@@ -1,7 +1,7 @@
 export default Ember.Route.extend({
-    renderTemplate: function() {
-      this.render('books.form');
-    },
+    //renderTemplate: function() {
+      //this.render('books.form');
+    //},
 
     deactivate: function () {
       // this is meant to rollback a 'cancel'

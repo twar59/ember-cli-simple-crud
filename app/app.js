@@ -6,6 +6,7 @@ Ember.MODEL_FACTORY_INJECTIONS = true;
 
 var App = Ember.Application.extend({
   modulePrefix: 'books', // TODO: loaded via config
+  podModulePrefix: 'books/pods',
   Resolver: Resolver
 });
 
