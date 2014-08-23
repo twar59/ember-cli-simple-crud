@@ -1,0 +1,15 @@
+{{#each book in model}}
+<div class="bg-info book-container">
+  <strong>{{book.title}}</strong> <br/> 
+  by {{book.author}}
+
+<div class="button-container">
+{{link-to 'Show' 'mcruds.show' book class="btn btn-sm btn-primary"}} 
+{{link-to 'Edit' 'mcruds.edit' book class="btn btn-sm btn-primary"}} 
+<button {{action 'delete' book}} class="btn btn-sm btn-danger">Delete</button>
+</div>
+
+</div>
+{{/each}}
+
+<p> {{link-to 'Add a Book' 'mcruds.new' class="btn btn-sm btn-success"}} </p>
