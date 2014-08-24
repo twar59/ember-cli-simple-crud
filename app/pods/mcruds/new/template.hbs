@@ -1,6 +1,8 @@
+{{#bootstrap-modal-form title="Edit Book" submit="submit" cancel="cancel"}}
+
 {{#form-key-capture submit="submit" cancel="cancel"}}
 
-  <h4>Edit Book</h4>
+  <h4>Add a New Book</h4>
 
     <div class="form-group">
       <label>Title</label>
@@ -12,8 +14,6 @@
       {{input type="text" placeholder="author" class="form-control" valueBinding="author"}}
     </div>
 
-    <button {{action submit}} class="btn btn-primary"> Submit </button>
-
-    <button {{action cancel}} class="btn btn-primary"> Cancel </button>
-
 {{/form-key-capture}}
+
+{{/bootstrap-modal-form}}

@@ -21,5 +21,6 @@ app.import('vendor/ember-data/ember-data.js');
 
 // ========== add css assets ===========
 app.import('vendor/bootstrap/dist/css/bootstrap.css');
+app.import('vendor/bootstrap/dist/js/bootstrap.js');
 
 module.exports = app.toTree();

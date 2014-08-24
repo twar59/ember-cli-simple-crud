@@ -8,8 +8,11 @@
 {{link-to 'Edit' 'mcruds.edit' book class="btn btn-sm btn-primary"}} 
 <button {{action 'delete' book}} class="btn btn-sm btn-danger">Delete</button>
 </div>
-
 </div>
+{{else}}
+-- no books --
 {{/each}}
+{{outlet}}
 
 <p> {{link-to 'Add a Book' 'mcruds.new' class="btn btn-sm btn-success"}} </p>
+

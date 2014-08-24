@@ -1,5 +1,5 @@
 export default Ember.Route.extend({
-    controllerName: 'rcruds.edit',
+    controllerName: 'mcruds.edit',
 
 //    renderTemplate: function() {
 //      this.render('rcruds.form');

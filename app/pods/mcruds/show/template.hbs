@@ -1,6 +1,4 @@
-<h3>{{title}}</h3>
-<p>by {{author}}</p>
-
-
-</hr>
-<p> {{#link-to 'rcruds'}}return to list{{/link-to}} </p>
+{{#bootstrap-modal-info title="Book Details" cancel="cancel"}}
+    <h3>Title: {{title}}</h3>
+    <p>by {{author}}</p>
+{{/bootstrap-modal-info}}
