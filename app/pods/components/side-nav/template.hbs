@@ -1,8 +1,8 @@
 <div class="col-sm-3 col-md-2 sidebar">
   <ul class="nav nav-sidebar">
-    <li class="active">{{#link-to 'rcruds'}}Rails Crud{{/link-to}}</li>
+    {{#link-li}} {{#link-to "rcruds.index"}}Rails Crud{{/link-to}} {{/link-li}}
+    {{#link-li}} {{#link-to "mcruds.index"}}Modal Crud{{/link-to}} {{/link-li}}
     <li><a href="#">inline Crud</a></li>
-    <li><a href="#">Modal Crud</a></li>
     <li><a href="#">Datatables</a></li>
   </ul>
 </div>
